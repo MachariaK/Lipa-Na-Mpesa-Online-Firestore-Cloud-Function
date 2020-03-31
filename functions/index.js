@@ -1,9 +1,16 @@
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
+const parse = require("./parse");
 
 admin.initializeApp();
 
-const callbackHandler = require("./callbackUrl");
+exports.lmno_callback_url = functions.https.onRequest(async (req, res) => {
+    const callbackData = req.body.Body.stkCallback;
+    const parsedData = parse(callbackData);
 
-exports.lmno_callback_url = functions.https.onRequest(callbackHandler);
+    admin.database().ref("/lmno").push(parsedData);
+
+    res.send("Completed");
+});
+
 
