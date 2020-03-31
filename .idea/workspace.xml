@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b5fdf9e-d939-4e37-a2a5-6d43561455df" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/tkari.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/callbackUrl.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/parse.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/parse.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +16,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="CallBack" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -70,7 +73,7 @@
       <workItem from="1585647090629" duration="692000" />
       <workItem from="1585647799818" duration="3911000" />
       <workItem from="1585657577259" duration="4631000" />
-      <workItem from="1585663946364" duration="2110000" />
+      <workItem from="1585663946364" duration="11435000" />
     </task>
     <servers />
   </component>
@@ -91,10 +94,10 @@
     </state>
     <state x="426" y="220" key="com.intellij.ide.util.TipDialog/0.0.1536.804/1920.0.1920.1040@0.0.1536.804" timestamp="1585663952868" />
     <state x="426" y="220" key="com.intellij.ide.util.TipDialog/0.0.1536.804@0.0.1536.804" timestamp="1585657578966" />
-    <state x="428" y="96" width="680" height="612" key="find.popup" timestamp="1585665012224">
+    <state x="428" y="96" width="680" height="612" key="find.popup" timestamp="1585666873027">
       <screen x="0" y="0" width="1536" height="804" />
     </state>
-    <state x="428" y="96" width="680" height="612" key="find.popup/0.0.1536.804/1920.0.1920.1040@0.0.1536.804" timestamp="1585665012224" />
+    <state x="428" y="96" width="680" height="612" key="find.popup/0.0.1536.804/1920.0.1920.1040@0.0.1536.804" timestamp="1585666873027" />
     <state x="428" y="96" width="680" height="612" key="find.popup/0.0.1536.804@0.0.1536.804" timestamp="1585657606225" />
   </component>
 </project>

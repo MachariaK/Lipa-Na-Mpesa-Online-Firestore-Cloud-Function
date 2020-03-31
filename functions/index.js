@@ -8,7 +8,7 @@ exports.lmno_callback_url = functions.https.onRequest(async (req, res) => {
     const callbackData = req.body.Body.stkCallback;
     const parsedData = parse(callbackData);
 
-    admin.database().ref("/lmno").push(parsedData);
+    admin.firestore().collection('lmno_responses').doc('/'+parsedData.checkoutRequestID+'/').update(parsedData);
 
     res.send("Completed");
 });
