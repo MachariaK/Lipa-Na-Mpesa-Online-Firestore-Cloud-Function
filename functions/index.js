@@ -30,13 +30,22 @@ exports.lmno_callback_url = functions.https.onRequest(async (req, res) => {
             'confirmed': true
         });
     }
-   let walletId =  await transaction.get().then(value => value.data().toUserId);
-    console.log(walletId);
+    let walletId = await transaction.get().then(value => value.data().toUserId);
 
-    // await transaction.get().then(async (value) => {
-    //     let wallet = (await wallets.doc(value.data().toUserId)).get();
-    //     console.log(wallet.text());
-    // });
+    let wallet = wallets.doc('/' + walletId + '/');
+
+    if ((await wallet.get()).exists) {
+        let balance = await wallet.get().then(value => value.data().balance);
+        await wallet.update({
+            'balance': parsedData.amount + balance
+        })
+    } else {
+        await wallet.set({
+            'balance': parsedData.amount
+        })
+    }
+
+
     res.send("Completed");
 });
 

@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4b5fdf9e-d939-4e37-a2a5-6d43561455df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +75,7 @@
       <workItem from="1585663946364" duration="14518000" />
       <workItem from="1585830269816" duration="1356000" />
       <workItem from="1586141480619" duration="728000" />
-      <workItem from="1586366655108" duration="11469000" />
+      <workItem from="1586366655108" duration="12331000" />
     </task>
     <servers />
   </component>
