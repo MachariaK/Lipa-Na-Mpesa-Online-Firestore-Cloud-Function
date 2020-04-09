@@ -8,9 +8,38 @@ exports.lmno_callback_url = functions.https.onRequest(async (req, res) => {
     const callbackData = req.body.Body.stkCallback;
     const parsedData = parse(callbackData);
 
-    admin.firestore().collection('lmno_responses').doc('/'+parsedData.checkoutRequestID+'/').update(parsedData);
+    let lmnoResponse = admin.firestore().collection('lmno_responses').doc('/' + parsedData.checkoutRequestID + '/');
+    let transaction = admin.firestore().collection('transactions').doc('/' + parsedData.checkoutRequestID + '/');
+    let wallets = admin.firestore().collection('wallets');
 
+    if ((await lmnoResponse.get()).exists) {
+        await lmnoResponse.update(parsedData);
+    } else {
+        await lmnoResponse.set(parsedData);
+    }
+    if ((await transaction.get()).exists) {
+        await transaction.update({
+            'amount': parsedData.amount,
+            'confirmed': true
+        });
+    } else {
+        await transaction.set({
+            'moneyType': 'money',
+            'type': 'deposit',
+            'amount': parsedData.amount,
+            'confirmed': true
+        });
+    }
+   let walletId =  await transaction.get().then(value => value.data().toUserId);
+    console.log(walletId);
+
+    // await transaction.get().then(async (value) => {
+    //     let wallet = (await wallets.doc(value.data().toUserId)).get();
+    //     console.log(wallet.text());
+    // });
     res.send("Completed");
 });
+
+
 
 

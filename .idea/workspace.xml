@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b5fdf9e-d939-4e37-a2a5-6d43561455df" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/firebase.json" beforeDir="false" afterPath="$PROJECT_DIR$/firebase.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/functions/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/functions/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -71,7 +74,10 @@
       <workItem from="1585647090629" duration="692000" />
       <workItem from="1585647799818" duration="3911000" />
       <workItem from="1585657577259" duration="4631000" />
-      <workItem from="1585663946364" duration="13174000" />
+      <workItem from="1585663946364" duration="14518000" />
+      <workItem from="1585830269816" duration="1356000" />
+      <workItem from="1586141480619" duration="728000" />
+      <workItem from="1586366655108" duration="11469000" />
     </task>
     <servers />
   </component>
@@ -87,11 +93,15 @@
       <screen x="0" y="0" width="1536" height="804" />
     </state>
     <state x="262" y="37" key="SettingsEditor/0.0.1536.804/1920.0.1920.1040@0.0.1536.804" timestamp="1585647877644" />
-    <state x="426" y="220" key="com.intellij.ide.util.TipDialog" timestamp="1585663952868">
+    <state width="498" height="451" key="SwitcherDM" timestamp="1586366926790">
       <screen x="0" y="0" width="1536" height="804" />
     </state>
-    <state x="426" y="220" key="com.intellij.ide.util.TipDialog/0.0.1536.804/1920.0.1920.1040@0.0.1536.804" timestamp="1585663952868" />
-    <state x="426" y="220" key="com.intellij.ide.util.TipDialog/0.0.1536.804@0.0.1536.804" timestamp="1585657578966" />
+    <state width="498" height="451" key="SwitcherDM/0.0.1536.804/1920.0.1920.1040@0.0.1536.804" timestamp="1586366926790" />
+    <state x="426" y="220" key="com.intellij.ide.util.TipDialog" timestamp="1586141481125">
+      <screen x="0" y="0" width="1536" height="804" />
+    </state>
+    <state x="426" y="220" key="com.intellij.ide.util.TipDialog/0.0.1536.804/1920.0.1920.1040@0.0.1536.804" timestamp="1585830402251" />
+    <state x="426" y="220" key="com.intellij.ide.util.TipDialog/0.0.1536.804@0.0.1536.804" timestamp="1586141481125" />
     <state x="428" y="96" width="680" height="612" key="find.popup" timestamp="1585666873027">
       <screen x="0" y="0" width="1536" height="804" />
     </state>
