@@ -45,7 +45,6 @@ exports.lmno_callback_url = functions.https.onRequest(async (req, res) => {
         })
     }
 
-
     res.send("Completed");
 });
 
