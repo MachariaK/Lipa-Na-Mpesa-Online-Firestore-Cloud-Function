@@ -35,13 +35,13 @@ exports.lmno_callback_url = functions.https.onRequest(async (req, res) => {
     let wallet = wallets.doc('/' + walletId + '/');
 
     if ((await wallet.get()).exists) {
-        let balance = await wallet.get().then(value => value.data().balance);
+        let balance = await wallet.get().then(value => value.data().moneyBalance);
         await wallet.update({
-            'balance': parsedData.amount + balance
+            'moneyBalance': parsedData.amount + balance
         })
     } else {
         await wallet.set({
-            'balance': parsedData.amount
+            'moneyBalance': parsedData.amount
         })
     }
 
